@@ -1,0 +1,286 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+label,
+input,
+button,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Personal CSS */
+
+:root {
+  --primary: rgb(213, 209, 209);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+@font-face {
+  font-family: Norse-Bold;
+  src: url(Norse-Bold.otf);
+}
+
+.main-page {
+  display: flex;
+  flex-direction: row;
+  margin: 0 10vw;
+}
+
+.side-bar {
+  display: flex;
+  flex-direction: column;
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex: 1 1 40%;
+  height: 100vh;
+}
+
+.title-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(30, 24, 24, 0.7);
+  font-family: Norse-Bold;
+  position: relative;
+  top: 20%;
+}
+
+.title-banner span {
+  position: relative;
+  top: 10px;
+  color: white;
+  font-size: 76px;
+}
+
+#logo {
+  width: 80px;
+}
+
+.content {
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 60%;
+  height: 100vh;
+}
+
+.description {
+  box-sizing: border-box;
+  flex: 1 1 35%;
+  padding: 40px;
+  margin-top: 60px;
+}
+
+.description p {
+  margin-top: 70px;
+  padding-right: 80px;
+  font-size: 1.3rem;
+  line-height: 22px;
+  font-weight: bold;
+}
+
+#italic {
+  font-style: italic;
+}
+
+.info {
+  background-color: whitesmoke;
+  flex: 1 1 30%;
+  box-sizing: border-box;
+  padding: 0 30px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#info-title {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 18px 0;
+}
+
+form {
+  padding-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  width: fit-content;
+  row-gap: 16px;
+  column-gap: 60px;
+  grid-template-columns: repeat(2, min-content);
+  grid-template-rows: repeat(3, min-content);
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+}
+
+.grid-item label {
+  align-self: flex-start;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 1px;
+}
+
+.grid-item input {
+  align-self: flex-start;
+  font-size: 12px;
+  font-weight: bold;
+  width: 200px;
+  padding: 6px;
+  border-radius: 8px;
+  border: 1px solid #999999;
+}
+
+.submit {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 35%;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+#submit-button {
+  background-color: #596d48;
+  color: white;
+  align-self: flex-start;
+  padding: 12px 44px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 2px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+a#log-in {
+  text-decoration: none;
+  color: #596d48;
+}
