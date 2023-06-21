@@ -90,6 +90,10 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
+  outline: none;
+  box-shadow: none;
+  appearance: none;
+  background: none;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -129,6 +133,10 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+input {
+  border: none;
 }
 
 /* Personal CSS */
@@ -259,6 +267,19 @@ form {
   padding: 6px;
   border-radius: 8px;
   border: 1px solid #999999;
+}
+
+#password:invalid {
+  border-color: red;
+}
+
+input:focus {
+  border-color: blue;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+input.error {
+  border-color: red;
 }
 
 .submit {
