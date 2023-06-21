@@ -12,11 +12,9 @@ document.addEventListener("DOMContentLoaded", function () {
     if (passwordOne !== passwordTwo) {
       passwordOneInput.classList.add("error");
       passwordTwoInput.classList.add("error");
-      console.log("test");
     } else {
       passwordOneInput.classList.remove("error");
       passwordTwoInput.classList.remove("error");
-      console.log("test1");
     }
   });
 });
